@@ -1,0 +1,38 @@
+body{
+  margin:0px;
+  border:1px solid black;
+}
+.example-enter {
+  transform: translate(100px,0px);
+}
+
+.example-enter.example-enter-active {
+  transform: translate(0px,0px);
+  transition: transform 200ms ease-in;
+}
+
+.example-leave {
+  transform: translate(0px,0px);
+}
+
+.example-leave.example-leave-active {
+  transform: translate(100px,0px);
+  transition: transform 200ms ease-in;
+}
+.example1-enter {
+  opacity: 0.1
+}
+
+.example1-enter.example1-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.example1-leave {
+  opacity: 1
+}
+
+.example1-leave.example1-leave-active {
+  opacity: 0.1;
+  transition: opacity 200ms ease-in;
+}

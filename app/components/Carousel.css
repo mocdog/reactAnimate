@@ -1,0 +1,51 @@
+.carouselBox{
+  width:400px;
+  height:200px;
+  border: 1px solid black;
+  position: relative;
+}
+.carouselImg{
+  width:400px;
+  height:200px;
+  position: absolute;
+  left:0px;
+  top:0px;
+}
+.carouselAnimate{
+  display: flex;
+}
+.carouselAnimate-enter{
+  opacity: 0.1;
+  transform: translate(400px,0px);
+}
+.carouselAnimate-enter.carouselAnimate-enter-active{
+  opacity: 1;
+  transform: translate(0px,0px);
+  transition: transform 500ms ease-in,opacity 500ms ease-in;
+}
+.carouselAnimate-leave {
+  opacity: 0.8;
+  transform: translate(0px,0px);
+}
+
+.carouselAnimate-leave.carouselAnimate-leave-active {
+  opacity: 0.1;
+  transform: translate(-400px,0px);
+  transition: transform 500ms ease-in,opacity 500ms ease-in;
+}
+.leftBtn{
+  position: absolute;
+  left:0px;
+  top:35%;
+  z-index: 999;
+}
+
+.carouselMask{
+  display: flex;
+  overflow-x:hidden;
+}
+ul{
+  /*display: flex;*/
+  margin:0px;
+  padding: 0px;
+}
